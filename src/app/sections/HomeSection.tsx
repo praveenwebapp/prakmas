@@ -37,25 +37,34 @@ export default function HomeSection() {
   return (
     <>
       {/* Header */}
-      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-black bg-opacity-50'}`}>
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white'}`}>
         <nav className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center">
-            <Link href="#home" className={`text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-white'} animate-prakmas-blink`}>PraKMas</Link>
+            <Link href="#home" className="flex items-center">
+              <Image
+                src="/mainlogoicon.png"
+                alt="Prakmas Logo"
+                width={40}
+                height={40}
+                className="mr-2"
+              />
+              <span className={`text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-gray-800'} animate-prakmas-blink`}>PraKMas</span>
+            </Link>
           </div>
-          <ul className={`hidden md:flex space-x-6 ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+          <ul className={`hidden md:flex space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             <li><a href="#home" className="hover:text-purple-600 transition duration-300">Home</a></li>
             <li><a href="#services" className="hover:text-purple-600 transition duration-300">Services</a></li>
             <li><a href="#team" className="hover:text-purple-600 transition duration-300">Team</a></li>
             <li><a href="#contact" className="hover:text-purple-600 transition duration-300">Contact</a></li>
           </ul>
-          <button onClick={toggleMobileMenu} className={`md:hidden ${scrolled ? 'text-gray-800' : 'text-white'}`}>
+          <button onClick={toggleMobileMenu} className={`md:hidden ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             {mobileMenuOpen ? <IoClose className="w-8 h-8" /> : <IoMenu className="w-8 h-8" />}
           </button>
         </nav>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className={`md:hidden ${scrolled ? 'bg-white text-gray-800' : 'bg-black bg-opacity-75 text-white'} py-4`}>
+          <div className={`md:hidden ${scrolled ? 'bg-white text-gray-800' : 'bg-white text-gray-800'} py-4`}>
             <ul className="flex flex-col items-center space-y-4">
               <li><a href="#home" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Home</a></li>
               <li><a href="#services" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Services</a></li>

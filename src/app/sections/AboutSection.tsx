@@ -25,7 +25,7 @@ export default function AboutSection() {
         <div className="md:w-1/2 relative flex items-center justify-center">
           <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-blue-700 to-purple-800 flex items-center justify-center">
             <Image
-              src="/logoicon.png"
+              src="/mainlogomain.png"
               alt="Prakmas Logo"
               width={200}
               height={200}
