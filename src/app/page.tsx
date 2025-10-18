@@ -10,8 +10,8 @@ export default function Home() {
           Coming Soon
         </h1>
         <p className="text-xl md:text-2xl text-center mb-8 animate-slide-up">
-          We're working hard to bring you something amazing. Stay tuned!
-        </p>
+  We&apos;re working hard to bring you something amazing. Stay tuned!
+</p>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-sm text-gray-300 z-10">
