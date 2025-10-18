@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* White background for the new design */
+  --foreground: #171717; /* Dark gray for text */
 }
 
 @theme inline {
@@ -19,8 +19,34 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif; /* Using a more modern sans-serif font */
+}
+
+/* Custom colors for the new design */
+.text-red-500 {
+  color: #ef4444; /* A standard red */
+}
+.bg-purple-600 {
+  background-color: #8b5cf6; /* A vibrant purple */
+}
+.text-purple-600 {
+  color: #8b5cf6;
+}
+.bg-purple-100 {
+  background-color: #ede9fe;
+}
+.bg-purple-50 {
+  background-color: #f5f3ff;
+}
+
+/* Font for "Enjoy" text */
+.font-script {
+  font-family: 'Pacifico', cursive; /* A more modern script font */
 }
