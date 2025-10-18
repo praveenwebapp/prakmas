@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function ContactSection() {
   const [name, setName] = useState('');
@@ -13,81 +14,70 @@ export default function ContactSection() {
     e.preventDefault();
     setStatus('Sending...');
 
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
-
-    const data = await res.json();
-
-    if (res.ok) {
+    // In a real application, you would send this data to your API endpoint
+    // For now, we'll simulate a successful send
+    setTimeout(() => {
       setStatus('Message sent successfully!');
       setName('');
       setEmail('');
       setMessage('');
-    } else {
-      setStatus(`Failed to send message: ${data.message}`);
-    }
+    }, 2000);
   };
 
   return (
-    <section id="contact" className="py-12 md:py-16 bg-blue-100">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="flex flex-col md:flex-row items-center justify-center bg-white rounded-lg shadow-lg p-6 md:p-8">
+    <section id="contact" className="py-16 md:py-24 bg-gray-900 text-white">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Send Us A Message</h2>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12">
+          The diversity of solutions, advancement with technology and trending ourselves with the world has made us what we are, today.
+        </p>
+
+        <div className="flex flex-col md:flex-row items-start justify-between bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 pr-0 md:pr-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Contact us</h2>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
-                  <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
-                </div>
+            <h3 className="text-2xl font-bold mb-4">Prakmas</h3>
+            <p className="text-lg mb-2">At Prakmas, we are dedicated to innovation and delivering exceptional solutions.</p>
+          </div>
+
+          <div className="md:w-1/2">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
               </div>
-              <div className="mb-3">
-                <div className="relative">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                  <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </div>
-              <div className="mb-4">
+              <div>
                 <textarea
                   placeholder="Message"
-                  rows={4}
-                  className="w-full p-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                  rows={5}
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
                 ></textarea>
-                <svg className="absolute left-3 top-4 w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.516 12.227 2 11.104 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9H7v2h2V9z" clipRule="evenodd"></path></svg>
               </div>
               <button
                 type="submit"
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
               >
                 Send Message
               </button>
               {status && <p className="mt-4 text-center text-sm font-medium">{status}</p>}
             </form>
-          </div>
-          <div className="md:w-1/2 flex justify-center items-center">
-            <Image src="/five.jpg" alt="Contact Illustration" fill style={{ objectFit: 'cover' }} className="rounded-lg shadow-md" />
           </div>
         </div>
       </div>

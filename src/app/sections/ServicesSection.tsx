@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-import { FaLaptopCode, FaShieldAlt, FaPalette, FaBug } from 'react-icons/fa';
+import { FaLaptopCode, FaShieldAlt, FaPalette, FaBug, FaRobot, FaCalendarAlt, FaUtensils, FaShoppingCart, FaChalkboardTeacher, FaUserTie } from 'react-icons/fa';
 
 export default function ServicesSection() {
   const services = [
     {
       title: 'Software Consultancy',
       icon: <FaLaptopCode className="w-10 h-10 text-white" />,
-      description: 'Detailed software development report form our software experts',
+      description: 'Detailed software development report from our software experts',
     },
     {
       title: 'Quality Assurance',
@@ -25,6 +25,36 @@ export default function ServicesSection() {
       icon: <FaBug className="w-10 h-10 text-white" />,
       description: 'Software and application development code review and debugging',
     },
+    {
+      title: 'AI Integrations',
+      icon: <FaRobot className="w-10 h-10 text-white" />,
+      description: 'Seamless integration of AI solutions to enhance business processes and efficiency',
+    },
+    {
+      title: 'Event Organizing',
+      icon: <FaCalendarAlt className="w-10 h-10 text-white" />,
+      description: 'Comprehensive event management services from planning to execution',
+    },
+    {
+      title: 'Food Industry Solutions',
+      icon: <FaUtensils className="w-10 h-10 text-white" />,
+      description: 'Innovative technology solutions tailored for the food and beverage sector',
+    },
+    {
+      title: 'E-commerce Development',
+      icon: <FaShoppingCart className="w-10 h-10 text-white" />,
+      description: 'Building robust and scalable e-commerce platforms for online businesses',
+    },
+    {
+      title: 'Technology Trainings',
+      icon: <FaChalkboardTeacher className="w-10 h-10 text-white" />,
+      description: 'Providing comprehensive training programs on various cutting-edge technologies',
+    },
+    {
+      title: 'Job Consultancy',
+      icon: <FaUserTie className="w-10 h-10 text-white" />,
+      description: 'Offering job search assistance and career support to help individuals find their ideal roles',
+    },
   ];
 
   return (
@@ -34,7 +64,7 @@ export default function ServicesSection() {
           Customized services
         </h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12">
-          The slide showcases four areas of services from our experienced team of engineers which are software consultancy, UX/UI Design, Quality Assurance and Code Audit.
+          Explore our comprehensive range of services, including software consultancy, quality assurance, UX/UI design, code audit, AI integrations, event organizing, food industry solutions, e-commerce development, technology trainings, and job consultancy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">

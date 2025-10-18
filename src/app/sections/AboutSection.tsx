@@ -10,27 +10,33 @@ export default function AboutSection() {
         <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
           <p className="text-blue-600 text-sm font-semibold uppercase mb-2">ABOUT US</p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Why Clio?
+            Why Prakmas?
           </h2>
           <p className="text-lg mb-6">
-            We’re more than just a tech company. We’ve got goals, hopes, and dreams, just like you. We want to serve a better solution to a centuries old profession and do some good in the world while we’re at it—permanently.
+            We’re more than a technology company. Prakmas was built on curiosity, creativity, and a drive to make a real difference — blending software, consulting, innovation, and emerging industries like food tech under one vision.
           </p>
           <p className="text-lg">
-            We know our technology changes lives. If that’s something that speaks to you—you belong here, too.
+            Our goal is simple: to turn smart ideas into meaningful experiences that empower businesses and people alike. Whether it’s building intelligent digital systems, optimizing operations, or innovating sustainable solutions — we’re here to redefine what’s possible.
+          </p>
+          <p className="text-lg">
+            Because at Prakmas, we believe technology isn’t just about progress — it’s about purpose.
           </p>
         </div>
-        <div className="md:w-1/2 relative">
-          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+        <div className="md:w-1/2 relative flex items-center justify-center">
+          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-blue-700 to-purple-800 flex items-center justify-center">
             <Image
-              src="/three.jpg"
-              alt="Team working"
-              fill
-              style={{ objectFit: 'cover' }}
-              quality={100}
+              src="/logoicon.png"
+              alt="Prakmas Logo"
+              width={200}
+              height={200}
+              className="animate-pulse"
             />
-          </div>
-          <div className="absolute bottom-0 right-0 bg-blue-600 text-white text-xs p-2 rounded-tl-lg">
-            Our panel of judges enjoying a hackathon (an event where cross-functional teams collaborate on a software project) presentation.
+            {/* Blinking sparks effect - simplified for demonstration */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0s' }}></div>
+              <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-white rounded-full animate-sparkle" style={{ animationDelay: '1s' }}></div>
+            </div>
           </div>
         </div>
       </div>
