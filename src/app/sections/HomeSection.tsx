@@ -78,11 +78,11 @@ export default function HomeSection() {
             className="opacity-30 animate-background-pan"
           />
         </div>
-        <div className="relative z-10 px-8 md:px-24 max-w-5xl text-center mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4 animate-bounce">
+        <div className="relative z-10 px-4 md:px-24 max-w-full text-center mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 animate-bounce text-wrap">
             <AnimatedText phrases={phrases} />
           </h1>
-          <p className="text-2xl md:text-3xl font-bold font-stylish mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-lg sm:text-xl md:text-3xl font-bold font-stylish mb-8 text-wrap" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-white">At Prakmas, we </span>
             <span className="text-red-500">unite technology, </span>
             <span className="text-purple-300">consulting, </span>
@@ -97,27 +97,27 @@ export default function HomeSection() {
             <span className="text-red-500">and make a lasting impact.</span>
           </p>
           {/* Hand clap animation */}
-          <div className="mt-8">
-            <div className="clap-animation mx-auto"></div>
+          <div className="mt-4 sm:mt-8">
+            <div className="clap-animation mx-auto w-10 h-10 sm:w-12 sm:h-12"></div>
           </div>
           {/* Thumbs up animation */}
-          <div className="flex justify-center items-center space-x-8 mt-8">
-            <div className="thumbs-up-animation text-5xl">👍</div>
+          <div className="flex justify-center items-center space-x-4 sm:space-x-8 mt-4 sm:mt-8">
+            <div className="thumbs-up-animation text-3xl sm:text-5xl">👍</div>
           </div>
           {/* Food, Software, and Job Search animations */}
-          <div className="flex justify-center items-center space-x-8 mt-8">
-            <div className="text-5xl animate-[food-spin_3s_ease-in-out_infinite]">🍕</div>
-            <div className="text-5xl animate-[code-fade_4s_ease-in-out_infinite]">💻</div>
-            <div className="text-5xl animate-[job-search-pulse_2s_ease-in-out_infinite]">💼</div>
+          <div className="flex justify-center items-center space-x-4 sm:space-x-8 mt-4 sm:mt-8">
+            <div className="text-3xl sm:text-5xl animate-[food-spin_3s_ease-in-out_infinite]">🍕</div>
+            <div className="text-3xl sm:text-5xl animate-[code-fade_4s_ease-in-out_infinite]">💻</div>
+            <div className="text-3xl sm:text-5xl animate-[job-search-pulse_2s_ease-in-out_infinite]">💼</div>
           </div>
           {/* Technology, Training, Innovation, Hardwork, Development, and Career animations */}
-          <div className="flex justify-center items-center space-x-8 mt-8">
-            <div className="text-5xl animate-[tech-rotate_5s_linear_infinite]">⚙️</div>
-            <div className="text-5xl animate-[training-grow_2s_ease-out_infinite_alternate]">🎓</div>
-            <div className="text-5xl animate-[innovation-spark_3s_ease-in-out_infinite]">💡</div>
-            <div className="text-5xl animate-[hardwork-bounce_2s_ease-in-out_infinite]">💪</div>
-            <div className="text-5xl animate-[development-slide_3s_ease-out_infinite_alternate]">📈</div>
-            <div className="text-5xl animate-[career-path_6s_linear_infinite]">🚀</div>
+          <div className="flex justify-center items-center space-x-4 sm:space-x-8 mt-4 sm:mt-8">
+            <div className="text-3xl sm:text-5xl animate-[tech-rotate_5s_linear_infinite]">⚙️</div>
+            <div className="text-3xl sm:text-5xl animate-[training-grow_2s_ease-out_infinite_alternate]">🎓</div>
+            <div className="text-3xl sm:text-5xl animate-[innovation-spark_3s_ease-in-out_infinite]">💡</div>
+            <div className="text-3xl sm:text-5xl animate-[hardwork-bounce_2s_ease-in-out_infinite]">💪</div>
+            <div className="text-3xl sm:text-5xl animate-[development-slide_3s_ease-out_infinite_alternate]">📈</div>
+            <div className="text-3xl sm:text-5xl animate-[career-path_6s_linear_infinite]">🚀</div>
           </div>
         </div>
         {/* Blinking sparks effect */}
