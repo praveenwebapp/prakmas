@@ -24,8 +24,8 @@ export default function AboutSection() {
             <Image
               src="/three.jpg"
               alt="Team working"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               quality={100}
             />
           </div>

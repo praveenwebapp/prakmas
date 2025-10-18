@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactSection() {
   const [name, setName] = useState('');
@@ -86,7 +87,7 @@ export default function ContactSection() {
             </form>
           </div>
           <div className="md:w-1/2 flex justify-center items-center">
-            <img src="/five.jpg" alt="Contact Illustration" className="max-w-full h-auto rounded-lg shadow-md" />
+            <Image src="/five.jpg" alt="Contact Illustration" fill style={{ objectFit: 'cover' }} className="rounded-lg shadow-md" />
           </div>
         </div>
       </div>

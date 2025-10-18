@@ -37,21 +37,12 @@ export default function ServicesSection() {
           The slide showcases four areas of services from our experienced team of engineers which are software consultancy, UX/UI Design, Quality Assurance and Code Audit.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="relative w-full">
-                <div className="bg-blue-500 p-6 flex flex-col items-center justify-center relative z-10">
-                  {service.icon}
-                  <h4 className="text-xl font-bold mt-4">{service.title}</h4>
-                </div>
-                {index < services.length - 1 && (
-                  <div className="absolute top-0 right-0 h-full w-12 bg-blue-500 transform skew-x-12 -mr-6 z-0"></div>
-                )}
-              </div>
-              <div className="bg-purple-700 p-6 h-48 flex items-center justify-center">
-                <p className="text-base">{service.description}</p>
-              </div>
+            <div key={index} className="flex flex-col items-center text-center bg-blue-700 p-6 rounded-lg shadow-lg">
+              {service.icon}
+              <h4 className="text-xl font-bold mt-4">{service.title}</h4>
+              <p className="text-base mt-2">{service.description}</p>
             </div>
           ))}
         </div>

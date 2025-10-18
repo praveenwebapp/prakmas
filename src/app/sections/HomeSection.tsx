@@ -43,9 +43,6 @@ export default function HomeSection() {
             <li><a href="#team" className="hover:text-purple-600 transition duration-300">Team</a></li>
             <li><a href="#contact" className="hover:text-purple-600 transition duration-300">Contact</a></li>
           </ul>
-          <Link href="/auth/login" className={`hidden md:block font-bold py-2 px-6 rounded-full transition duration-300 ${scrolled ? 'border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border border-white text-white hover:bg-white hover:text-gray-800'}`}>
-            Login
-          </Link>
           <button onClick={toggleMobileMenu} className={`md:hidden ${scrolled ? 'text-gray-800' : 'text-white'}`}>
             {mobileMenuOpen ? <IoClose className="w-8 h-8" /> : <IoMenu className="w-8 h-8" />}
           </button>
@@ -59,11 +56,6 @@ export default function HomeSection() {
               <li><a href="#services" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Services</a></li>
               <li><a href="#team" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Team</a></li>
               <li><a href="#contact" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Contact</a></li>
-              <li>
-                <Link href="/auth/login" onClick={toggleMobileMenu} className={`font-bold py-2 px-6 rounded-full transition duration-300 ${scrolled ? 'border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white' : 'border border-white text-white hover:bg-white hover:text-gray-800'}`}>
-                  Login
-                </Link>
-              </li>
             </ul>
           </div>
         )}
@@ -75,8 +67,8 @@ export default function HomeSection() {
           <Image
             src="/two.jpg"
             alt="IT Services"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             quality={100}
             className="opacity-50"
           />
