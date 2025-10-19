@@ -9,7 +9,7 @@ import ContactSection from './sections/ContactSection';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-white">
       <HomeSection />
       <AboutSection />
       <ServicesSection />

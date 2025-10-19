@@ -32,39 +32,44 @@ export default function HomeSection() {
   return (
     <>
       {/* Header */}
-      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white'}`}>
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white'}`} style={{ backgroundColor: 'white' }}>
         <nav className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center">
             <Link href="#home" className="flex items-center">
               <Image
-                src="/logoicon.png"
+                src="/logo.jpeg"
                 alt="Prakmas Logo"
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 className="mr-2"
               />
-              <span className={`text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>PraKMas</span>
+              <div>
+                <span className={`text-2xl font-bold text-black`}>PraKMas</span>
+                <p className="text-sm text-black font-bold">Driven By Innovation</p>
+              </div>
             </Link>
           </div>
-          <ul className={`hidden md:flex flex-1 justify-center space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
-            <li><a href="#home" className="hover:text-purple-600 transition duration-300">Home</a></li>
-            <li><a href="#services" className="hover:text-purple-600 transition duration-300">Services</a></li>
-            <li><a href="#team" className="hover:text-purple-600 transition duration-300">Team</a></li>
-            <li><a href="#contact" className="hover:text-purple-600 transition duration-300">Contact</a></li>
-          </ul>
-          <button onClick={toggleMobileMenu} className={`md:hidden ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+            <ul className={`hidden md:flex flex-1 justify-center space-x-6`}>
+              <li><a href="#home" className="text-red-500 hover:text-black transition duration-300 font-bold">Home</a></li>
+              <li><a href="#about" className="text-red-500 hover:text-black transition duration-300 font-bold">About</a></li>
+              <li><a href="#services" className="text-red-500 hover:text-black transition duration-300 font-bold">Services</a></li>
+              <li><a href="#team" className="text-red-500 hover:text-black transition duration-300 font-bold">Team</a></li>
+              <li><a href="#contact" className="text-red-500 hover:text-black transition duration-300 font-bold">Contact</a></li>
+            </ul>
+          <button onClick={toggleMobileMenu} className={`md:hidden ${scrolled ? 'text-red-500' : 'text-red-500'}`}>
             {mobileMenuOpen ? <IoClose className="w-8 h-8" /> : <IoMenu className="w-8 h-8" />}
           </button>
         </nav>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className={`md:hidden ${scrolled ? 'bg-white text-gray-800' : 'bg-white text-gray-800'} py-4`}>
+          <div className={`md:hidden ${scrolled ? 'bg-white' : 'bg-white'} py-4`}>
             <ul className="flex flex-col items-center space-y-4">
-              <li><a href="#home" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Home</a></li>
-              <li><a href="#services" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Services</a></li>
-              <li><a href="#team" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Team</a></li>
-              <li><a href="#contact" onClick={toggleMobileMenu} className="hover:text-purple-600 transition duration-300">Contact</a></li>
+              <li><a href="#home" onClick={toggleMobileMenu} className="text-red-500 hover:text-black transition duration-300 font-bold">Home</a></li>
+              <li><a href="#about" onClick={toggleMobileMenu} className="text-red-500 hover:text-black transition duration-300 font-bold">About</a></li>
+              <li><a href="#services" onClick={toggleMobileMenu} className="text-red-500 hover:text-black transition duration-300 font-bold">Services</a></li>
+              <li><a href="#team" onClick={toggleMobileMenu} className="text-red-500 hover:text-black transition duration-300 font-bold">Team</a></li>
+              <li><a href="#contact" onClick={toggleMobileMenu} className="text-red-500 hover:text-black transition duration-300 font-bold">Contact</a></li>
             </ul>
           </div>
         )}
@@ -74,7 +79,7 @@ export default function HomeSection() {
       <section id="home" className="relative h-screen flex items-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/logoicon.png"
+            src="/six.jpg"
             alt="Dynamic Background"
             fill
             style={{ objectFit: 'cover' }}
@@ -87,7 +92,7 @@ export default function HomeSection() {
             Transforming Ideas into Intelligent Solutions.
           </h1>
           <p className="text-lg sm:text-xl md:text-3xl font-bold font-stylish mb-8 text-wrap" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            <span className="text-white">At Prakmas, we </span>
+            <span className="text-white">At PraKMas, we </span>
             <span className="text-red-500">unite technology, </span>
             <span className="text-purple-300">consulting, </span>
             <span className="text-white">and innovation to craft </span>

@@ -36,8 +36,8 @@ export default function ContactSection() {
 
           <div className="flex flex-col md:flex-row items-start justify-between bg-white text-gray-800 rounded-lg shadow-lg p-6 md:p-8">
             <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 pr-0 md:pr-8">
-              <h3 className="text-2xl font-bold mb-4">Prakmas</h3>
-              <p className="text-lg mb-2">At Prakmas, we are dedicated to innovation and delivering exceptional solutions.</p>
+              <h3 className="text-2xl font-bold mb-4">PraKMas</h3>
+              <p className="text-lg mb-2">At PraKMas, we are dedicated to innovation and delivering exceptional solutions.</p>
             </div>
 
             <div className="md:w-1/2 w-full max-w-md mx-auto">
@@ -74,7 +74,7 @@ export default function ContactSection() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                  className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
                 >
                   Send Message
                 </button>

@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff; /* White background for the new design */
-  --foreground: #171717; /* Dark gray for text */
+  --background: #1a1a1a; /* Dark background for the new design (black) */
+  --foreground: #e0e0e0; /* Light gray for text (silver) */
+  --primary-red: #e53e3e; /* A strong red */
+  --secondary-silver: #a0aec0; /* A muted silver */
+  --dark-gray: #2d3748; /* A darker gray for accents */
 }
 
 @theme inline {
@@ -32,35 +36,66 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', sans-serif; /* Using a more modern sans-serif font */
-  background-image: url('/one.jpg'); /* Set a default background image */
-  background-size: cover; /* Cover the entire viewport */
-  background-attachment: fixed; /* Keep the background fixed while scrolling */
-  background-position: center; /* Center the background image */
+  font-family: 'Raleway', sans-serif; /* Using Raleway font */
+  background-image: none; /* Remove default background image */
 }
 
 .font-stylish {
-  font-family: var(--font-montserrat); /* A stylish sans-serif font */
+  font-family: 'Raleway', sans-serif; /* A stylish sans-serif font */
 }
 
 /* Custom colors for the new design */
 .text-red-500 {
-  color: #ef4444; /* A standard red */
+  color: var(--primary-red) !important;
+}
+.bg-red-500 {
+  background-color: var(--primary-red);
+}
+.text-silver-400 {
+  color: var(--secondary-silver);
+}
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+.text-gray-800 {
+  color: var(--foreground);
+}
+.bg-white {
+  background-color: var(--background);
+}
+.text-gray-600 {
+  color: var(--secondary-silver);
+}
+.hover\:text-purple-600:hover {
+  color: var(--primary-red);
 }
 .bg-purple-600 {
-  background-color: #8b5cf6; /* A vibrant purple */
+  background-color: var(--primary-red);
 }
-.text-purple-600 {
-  color: #8b5cf6;
+.text-purple-300 {
+  color: var(--secondary-silver);
 }
-.bg-purple-100 {
-  background-color: #ede9fe;
+.text-blue-300 {
+  color: var(--secondary-silver);
 }
-.bg-purple-50 {
-  background-color: #f5f3ff;
+.text-green-300 {
+  color: var(--secondary-silver);
+}
+.text-yellow-300 {
+  color: var(--secondary-silver);
+}
+.bg-blue-700 {
+  background-color: var(--dark-gray);
+}
+.from-blue-700 {
+  --tw-gradient-from: var(--dark-gray) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(45 53 68 / 0) var(--tw-gradient-to-position);
+}
+.to-purple-800 {
+  --tw-gradient-to: var(--primary-red) var(--tw-gradient-to-position);
 }
 
 /* Font for "Enjoy" text */
 .font-script {
-  font-family: 'Pacifico', cursive; /* A more modern script font */
+  font-family: 'Raleway', sans-serif; /* Changed to Raleway */
 }
