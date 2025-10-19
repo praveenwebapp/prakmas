@@ -46,7 +46,7 @@ export default function HomeSection() {
               <span className={`text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>PraKMas</span>
             </Link>
           </div>
-          <ul className={`hidden md:flex space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <ul className={`hidden md:flex md:justify-center md:flex-1 space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             <li><a href="#home" className="hover:text-purple-600 transition duration-300">Home</a></li>
             <li><a href="#services" className="hover:text-purple-600 transition duration-300">Services</a></li>
             <li><a href="#team" className="hover:text-purple-600 transition duration-300">Team</a></li>

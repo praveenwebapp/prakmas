@@ -38,7 +38,7 @@ export default function ContactSection() {
             <p className="text-lg mb-2">At Prakmas, we are dedicated to innovation and delivering exceptional solutions.</p>
           </div>
 
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 w-full max-w-md mx-auto">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <input
