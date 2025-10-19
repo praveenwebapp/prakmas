@@ -26,12 +26,17 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value based on your header's height */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Inter', sans-serif; /* Using a more modern sans-serif font */
+  background-image: url('/one.jpg'); /* Set a default background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  background-position: center; /* Center the background image */
 }
 
 .font-stylish {

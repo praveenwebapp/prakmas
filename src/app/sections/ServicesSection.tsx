@@ -58,23 +58,26 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-blue-800 to-purple-900 text-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Customized services
-        </h2>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12">
-          Explore our comprehensive range of services, including software consultancy, quality assurance, UX/UI design, code audit, AI integrations, event organizing, food industry solutions, e-commerce development, technology trainings, and job consultancy.
-        </p>
+    <section id="services" className="py-16 md:py-24 text-white relative overflow-hidden" style={{ backgroundImage: 'url("/five.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <div className="absolute inset-0 bg-gray-900 opacity-80 z-0"></div> {/* Overlay for readability */}
+      <div className="relative z-10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Customized services
+          </h2>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12">
+            Explore our comprehensive range of services, including software consultancy, quality assurance, UX/UI design, code audit, AI integrations, event organizing, food industry solutions, e-commerce development, technology trainings, and job consultancy.
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center bg-blue-700 p-6 rounded-lg shadow-lg">
-              {service.icon}
-              <h4 className="text-xl font-bold mt-4">{service.title}</h4>
-              <p className="text-base mt-2">{service.description}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {services.map((service, index) => (
+              <div key={index} className="flex flex-col items-center text-center bg-blue-700 p-6 rounded-lg shadow-lg">
+                {service.icon}
+                <h4 className="text-xl font-bold mt-4">{service.title}</h4>
+                <p className="text-base mt-2">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

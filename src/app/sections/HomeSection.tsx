@@ -37,7 +37,7 @@ export default function HomeSection() {
           <div className="flex items-center">
             <Link href="#home" className="flex items-center">
               <Image
-                src="/mainlogoicon.png"
+                src="/logoicon.png"
                 alt="Prakmas Logo"
                 width={40}
                 height={40}
@@ -46,7 +46,7 @@ export default function HomeSection() {
               <span className={`text-2xl font-bold ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>PraKMas</span>
             </Link>
           </div>
-          <ul className={`hidden md:flex md:justify-center md:flex-1 space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
+          <ul className={`hidden md:flex flex-1 justify-center space-x-6 ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>
             <li><a href="#home" className="hover:text-purple-600 transition duration-300">Home</a></li>
             <li><a href="#services" className="hover:text-purple-600 transition duration-300">Services</a></li>
             <li><a href="#team" className="hover:text-purple-600 transition duration-300">Team</a></li>
@@ -74,7 +74,7 @@ export default function HomeSection() {
       <section id="home" className="relative h-screen flex items-center text-white overflow-hidden bg-gray-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/travel-hero.png"
+            src="/logoicon.png"
             alt="Dynamic Background"
             fill
             style={{ objectFit: 'cover' }}
