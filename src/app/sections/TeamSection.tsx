@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function TeamSection() {
   return (
-    <section id="team" className="py-16 md:py-24 text-foreground relative overflow-hidden" style={{ backgroundImage: 'url("/prakmaslogo.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+    <section id="team" className="py-16 md:py-24 text-foreground relative overflow-hidden" style={{ backgroundImage: 'url("/four.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-background opacity-80 z-0"></div> {/* Overlay for readability */}
       <div className="relative z-10">
         <div className="container mx-auto px-4">

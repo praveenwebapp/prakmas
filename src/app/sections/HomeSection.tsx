@@ -88,22 +88,20 @@ export default function HomeSection() {
           />
         </div>
         <div className="relative z-10 px-4 md:px-24 max-w-full text-center mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 text-wrap">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 text-wrap">
             Transforming Ideas into Intelligent Solutions.
           </h1>
-          <p className="text-lg sm:text-xl md:text-3xl font-bold font-stylish mb-8 text-wrap" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-lg sm:text-xl md:text-3xl font-bold font-stylish mb-8 text-wrap">
             <span className="text-white">At PraKMas, we </span>
             <span className="text-red-500">unite technology, </span>
             <span className="text-purple-300">consulting, </span>
-            <span className="text-white">and innovation to craft </span>
-            <span className="text-green-300">intelligent software </span>
-            <span className="text-yellow-300">and scalable solutions. </span>
+            <span className="text-white">and innovation to shape the future of digital transformation. Our mission is to build </span>
+            <span className="text-green-300">intelligent software ecosystems </span>
+            <span className="text-yellow-300">and scalable solutions that empower businesses to grow smarter, faster, and more sustainably. </span>
             <span className="text-white">From </span>
-            <span className="text-blue-300">digital transformation </span>
-            <span className="text-red-500">to food tech breakthroughs, </span>
-            <span className="text-white">we empower businesses to grow </span>
-            <span className="text-purple-300">smarter </span>
-            <span className="text-red-500">and make a lasting impact.</span>
+            <span className="text-blue-300">enterprise platforms </span>
+            <span className="text-red-500">to food-tech breakthroughs, </span>
+            <span className="text-white">we combine strategy, creativity, and technical excellence to solve real-world challenges. With a passion for innovation and a commitment to quality, PraKMas helps organizations unlock new possibilities, enhance customer experiences, and make a lasting impact across industries.</span>
           </p>
         </div>
       </section>

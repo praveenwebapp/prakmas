@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-16 md:py-24 text-foreground relative overflow-hidden" style={{ backgroundImage: 'url("/prakmaslogo.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+    <section id="about" className="py-16 md:py-24 text-foreground relative overflow-hidden" style={{ backgroundImage: 'url("/team.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-background opacity-80 z-0"></div> {/* Overlay for readability */}
       <div className="relative z-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
@@ -15,13 +15,13 @@ export default function AboutSection() {
               Why PraKMas?
             </h2>
             <div className="flex justify-center mb-8"> {/* Display on all devices */}
-              <Image
+              {/* <Image
                 src="/logo.jpeg"
                 alt="Prakmas Logo"
                 width={300}
                 height={300}
                 className="mx-auto rounded-lg shadow-lg max-w-full h-auto"
-              />
+              /> */}
             </div>
             <p className="text-lg mb-6">
               We’re more than a technology company. PraKMas was built on curiosity, creativity, and a drive to make a real difference — blending software, consulting, innovation, and emerging industries like food tech under one vision.
@@ -36,10 +36,10 @@ export default function AboutSection() {
           <div className="md:w-1/2 relative flex items-center justify-center"> {/* Display on all devices */}
             <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-dark-gray to-primary-red flex items-center justify-center">
               <Image
-                src="/logo.jpeg"
+                src="/prakmaslogo1.jpeg"
                 alt="Prakmas Logo"
-                width={700}
-                height={700}
+                width={400}
+                height={500}
                 className="max-w-full h-auto"
               />
             </div>

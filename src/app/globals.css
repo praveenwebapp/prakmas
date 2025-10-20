@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -36,7 +36,7 @@ body {
 }
 
 .font-stylish {
-  font-family: 'Raleway', sans-serif; /* A stylish sans-serif font */
+  font-family: 'Calibri', sans-serif; /* Calibri font */
 }
 
 /* Custom colors for the new design */
