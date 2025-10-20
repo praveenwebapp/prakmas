@@ -14,6 +14,15 @@ export default function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               Why PraKMas?
             </h2>
+            <div className="flex justify-center mb-8"> {/* Display on all devices */}
+              <Image
+                src="/logo.jpeg"
+                alt="Prakmas Logo"
+                width={300}
+                height={300}
+                className="mx-auto rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
             <p className="text-lg mb-6">
               We’re more than a technology company. PraKMas was built on curiosity, creativity, and a drive to make a real difference — blending software, consulting, innovation, and emerging industries like food tech under one vision.
             </p>
@@ -24,14 +33,14 @@ export default function AboutSection() {
               Because at PraKMas, we believe technology isn’t just about progress — it’s about purpose.
             </p>
           </div>
-          <div className="md:w-1/2 relative flex items-center justify-center">
+          <div className="md:w-1/2 relative flex items-center justify-center"> {/* Display on all devices */}
             <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-dark-gray to-primary-red flex items-center justify-center">
               <Image
-                src="/prakmaslogo.jpeg"
+                src="/logo.jpeg"
                 alt="Prakmas Logo"
                 width={700}
                 height={700}
-                className=""
+                className="max-w-full h-auto"
               />
             </div>
           </div>
