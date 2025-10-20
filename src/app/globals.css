@@ -23,11 +23,6 @@
   }
 }
 
-@keyframes sparkle {
-  0%, 100% { opacity: 0; transform: scale(0.5); }
-  50% { opacity: 1; transform: scale(1); }
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* Adjust this value based on your header's height */
@@ -93,9 +88,4 @@ body {
 }
 .to-purple-800 {
   --tw-gradient-to: var(--primary-red) var(--tw-gradient-to-position);
-}
-
-/* Font for "Enjoy" text */
-.font-script {
-  font-family: 'Raleway', sans-serif; /* Changed to Raleway */
 }
