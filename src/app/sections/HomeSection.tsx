@@ -88,10 +88,10 @@ export default function HomeSection() {
           />
         </div>
         <div className="relative z-10 px-4 md:px-24 max-w-full text-center mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 text-wrap">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 max-w-4xl mx-auto">
             Transforming Ideas into Intelligent Solutions.
           </h1>
-          <p className="text-lg sm:text-xl md:text-3xl font-bold font-stylish mb-8 text-wrap">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-stylish mb-8 max-w-3xl mx-auto">
             <span className="text-white">At PraKMas, we </span>
             <span className="text-red-500">unite technology, </span>
             <span className="text-purple-300">consulting, </span>
