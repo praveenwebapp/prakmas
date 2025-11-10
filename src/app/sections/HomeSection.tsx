@@ -87,11 +87,11 @@ export default function HomeSection() {
             className="opacity-30"
           />
         </div>
-        <div className="relative z-10 px-4 md:px-24 max-w-full text-center mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 max-w-4xl mx-auto">
+        <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-24 max-w-full text-center mx-auto">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 sm:mb-6 max-w-4xl mx-auto px-2">
             Transforming Ideas into Intelligent Solutions.
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-stylish mb-8 max-w-3xl mx-auto">
+          <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-stylish mb-8 max-w-3xl mx-auto leading-relaxed px-2">
             <span className="text-white">At PraKMas, we </span>
             <span className="text-red-500">unite technology, </span>
             <span className="text-purple-300">consulting, </span>
